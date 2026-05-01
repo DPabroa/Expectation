@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacology Expectations</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Background with Cinematic Medical Imagery */
+        .bg-image {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                              url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=2070&auto=format&fit=crop'); 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 850px;
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .meme-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 15px;
+            flex: 1;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card h2 { margin-top: 0; font-size: 1.5rem; }
+        .expectation h2 { color: #d32f2f; }
+        .reality h2 { color: #388e3c; }
+
+        .meme-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+
+        .text-content { font-size: 1rem; line-height: 1.6; text-align: left; }
+    </style>
+</head>
+<body>
+
+<div class="bg-image">
+    <div class="container">
+        <h1>Pharmacology in Nursing</h1>
+        <p>My Expectations for the Journey Ahead</p>
+
+        <div class="meme-section">
+            <!-- EXPECTATION -->
+            <div class="card expectation">
+                <h2>EXPECTATION</h2>
+                <img src="student-confused.png" alt="Stressed Student" class="meme-img">
+                <div class="text-content">
+                    <strong>The Course:</strong> Memorizing thousands of generic drug names and dosages.<br>
+                    <strong>The Professor:</strong> A strict expert who delivers deep scientific lectures.
+                </div>
+            </div>
+
+            <!-- REALITY -->
+            <div class="card reality">
+                <h2>REALITY</h2>
+                <img src="nurse-hero.png" alt="Confident Nurse" class="meme-img">
+                <div class="text-content">
+                    <strong>The Course:</strong> Gaining the "Superpower" of clinical rationale to ensure patient safety.<br>
+                    <strong>The Professor:</strong> A mentor who turns complex mechanisms into life-saving wisdom.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
